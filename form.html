@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALT School Application Form</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+
+    <!-- Global Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="form.html">Application Form</a></li>
+        </ul>
+    </nav>
+     
+
+    <section class="body">
+        <div class="lhs-container">
+            <div class="lhs-top-container">
+                <div class="image-container">
+                    <img src="./Icons/Image.svg" alt="Image">
+                </div>
+                <div class="lhs-title-container">
+                    <h1>
+                        Learn highly sought after <br> skills without hassle.
+                    </h1>
+                </div>    
+            </div>
+
+            <div class="lhs-bottom-container">
+                <div class="icons-container">
+                    <div class="icon-container">
+                        <img src="./Icons/X.svg" alt="X">
+                    </div>
+
+                    <div class="icon-container">
+                        <img src="./Icons/Instagram.svg" alt="Instagram">
+                    </div>
+
+                    <div class="icon-container">
+                        <img src="./Icons/Facebook.svg" alt="Facebook">
+                    </div>
+
+                    <div class="icon-container">
+                        <img src="./Icons/LinkedIn.svg" alt="LinkedIn">
+                    </div>
+                </div>
+
+                <div class="production-date-container">
+                    <h6>
+                        2025 © AltSchool Africa. All rights reserved.
+                    </h6>
+                </div>
+            </div>
+        </div>
+        <div class="rhs-container">
+            <form>
+                <h1>Signup</h1>
+                <p>Take the next steps to apply at AltSchool Africa</p>
+        
+                <div>
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Enter first name" required>
+                </div>
+        
+                <div>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Enter last name" required>
+                </div>
+        
+                <div>
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+        
+                <div>
+                    <label for="dateOfBirth">Date of Birth</label>
+                    <input type="text" id="dateOfBirth" name="dateOfBirth" placeholder="YYYY-MM-DD" required>
+                </div>
+        
+                <div>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter email address" required>
+                </div>
+        
+                <div>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="0815438700" required>
+                </div>
+        
+                <div>
+                    <label for="country">Country</label>
+                    <select id="country" name="country" required>
+                        <option value="">Select your country</option>
+                        <!-- Add options for countries -->
+                    </select>
+                </div>
+        
+                <div>
+                    <label for="stateOfResidence">State/City of Residence</label>
+                    <input type="text" id="stateOfResidence" name="stateOfResidence" placeholder="Enter your state of residence" required>
+                </div>
+        
+                <div>
+                    <label for="hearAboutUs">How did you hear about us?</label>
+                    <select id="hearAboutUs" name="hearAboutUs" required>
+                        <option value="">Select channel</option>
+                        <option value="Twitter">Twitter</option>
+                        <option value="Facebook">Facebook</option>
+                        <option value="Youtube">Youtube</option>
+                        <option value="Friend">Friend</option>
+                        <option value="Whatsapp">Whatsapp</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="Billboard">Bill Board</option>
+                        <option value="Sales">Sales Officer</option>
+                        <option value="Other">Other</option>
+                        <!-- Add options for channels -->
+                    </select>
+                </div>
+        
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter password" required>
+                </div>
+        
+                <div>
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Enter password again" required>
+                </div>
+        
+                <div>
+                    <input type="checkbox" id="termsAgreement" name="termsAgreement" required>
+                    <label for="termsAgreement">By clicking continue, I agree to <a href="#">Terms of Use</a> and acknowledge that I have read the <a href="#">Privacy Policy</a>.</label>
+                </div>
+        
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+
+</body>
+</html>

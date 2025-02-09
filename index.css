@@ -1,0 +1,184 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2d3748;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #4a90e2;
+}
+
+/* Main Content Styles */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #2d3748;
+    margin-bottom: 1rem;
+}
+
+/* Section Styles */
+section {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+    color: #2d3748;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+#personal-info p {
+    margin-bottom: 0.5rem;
+}
+
+#personal-info strong {
+    color: #4a5568;
+    min-width: 120px;
+    display: inline-block;
+}
+
+#biography p, #program-motivation p {
+    color: #4a5568;
+    text-align: justify;
+}
+
+#future-goals ul {
+    padding-left: 1.5rem;
+}
+
+#future-goals li {
+    margin-bottom: 1rem;
+    color: #4a5568;
+}
+
+/* Back to Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #4a90e2;
+    color: white;
+    padding: 0.75rem 1.25rem;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-size: 0.875rem;
+}
+
+#back-to-top:hover {
+    transform: translateY(-2px);
+    background-color: #357abd;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2d3748;
+    color: #fff;
+    padding: 3rem 1.5rem;
+    margin-top: 4rem;
+}
+
+footer address {
+    max-width: 800px;
+    margin: 0 auto 1.5rem;
+    font-style: normal;
+    line-height: 1.8;
+}
+
+footer p {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: #a0aec0;
+    font-size: 0.875rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    #back-to-top {
+        bottom: 1rem;
+        right: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 1rem;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+
+    main {
+        margin: 1rem auto;
+        padding: 0 1rem;
+    }
+
+    header h1 {
+        font-size: 1.75rem;
+    }
+
+    section h2 {
+        font-size: 1.25rem;
+    }
+}
